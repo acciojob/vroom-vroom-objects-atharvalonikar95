@@ -5,6 +5,7 @@ function Car(make, model) {
 
 }
 
+// Car.prototype=Object.create()
 Car.prototype.constructor=Car
 Car.prototype.getMakeModel=function(){
 		return this._make +" "+this._model
@@ -17,6 +18,7 @@ function SportsCar(make, model, topSpeed) {
 }
 SportsCar.prototype=Object.create(Car.prototype)
 SportsCar.prototype.constructor=SportsCar
+
 SportsCar.prototype.getTopSpeed=function () {
 	return this._topSpeed
 }
