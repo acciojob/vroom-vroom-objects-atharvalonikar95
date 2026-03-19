@@ -1,14 +1,14 @@
 // Complete the js code
 function Car(make, model) {
-	this._make=make
-	this._model=model
+	this.make=make
+	this.model=model
 
 }
 
 // Car.prototype=Object.create()
 Car.prototype.constructor=Car
 Car.prototype.getMakeModel=function(){
-		return this._make +" "+this._model
+		return this.make +" "+this.model
 	}
 
 function SportsCar(make, model, topSpeed) {
