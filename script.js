@@ -20,7 +20,7 @@ SportsCar.prototype=Object.create(Car.prototype)
 SportsCar.prototype.constructor=SportsCar
 
 SportsCar.prototype.getTopSpeed=function () {
-	return this._topSpeed
+	return this.topSpeed
 }
 
 // Do not change the code below
